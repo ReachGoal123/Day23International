@@ -17,7 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	UILabel *l = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    l.text = NSLocalizedString(@"hello", @"这是个你好的意思");
+    [self.view addSubview:l];
 }
 
 - (void)didReceiveMemoryWarning
